@@ -5,11 +5,10 @@ use Illuminate\Support\Facades\DB;
 
 class CitiesTableSeeder extends Seeder
 {
-    /**
-     * Run the database seeds.
-     *
-     * @return void
-     */
+
+    //Se insertan los datos de las ciudades
+    //Se insertan las ciudades Londres, Oxford, Tokio, Kioto, Jaipur, Amber, Copenhague y Aarhus
+    //Se insertan los nombres de las ciudades y los nombres de las ciudades en la API
     public function run()
     {
         DB::table('cities')->insert([

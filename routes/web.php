@@ -26,6 +26,6 @@ Route::get('cities', [CityController::class, 'getAll']);
 Route::get('cities/{id}/by_country', [CityController::class, 'getByCityId']);
 Route::get('cities/{id}', [CityController::class, 'getOne']);
 
-//Rutas de la API para buscar
+//Rutas de la API para historial de consultas
 Route::get('history', [HistoryController::class, 'getAll']);
 Route::post('history', [HistoryController::class, 'saveHistory']);

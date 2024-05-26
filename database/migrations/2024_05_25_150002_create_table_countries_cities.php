@@ -6,11 +6,8 @@ use Illuminate\Support\Facades\Schema;
 
 class CreateTableCountriesCities extends Migration
 {
-    /**
-     * Run the migrations.
-     *
-     * @return void
-     */
+
+    //Se crea la tabla countries_cities con las llaves foraneas city_id y country_id
     public function up()
     {
         Schema::create('countries_cities', function (Blueprint $table) {
@@ -23,11 +20,7 @@ class CreateTableCountriesCities extends Migration
         });
     }
 
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
+    //Se elimina la tabla countries_cities en caso de que exista
     public function down()
     {
         Schema::dropIfExists('countries_cities');

@@ -5,11 +5,9 @@ use Illuminate\Support\Facades\DB;
 
 class CountriesTableSeeder extends Seeder
 {
-    /**
-     * Run the database seeds.
-     *
-     * @return void
-     */
+    //Se insertan los datos de los paises
+    //Se insertan los paises Inglaterra, Japón, India y Dinamarca
+    //Se insertan los nombres de los paises y los nombres de los paises en la API
     public function run()
     {
         DB::table('countries')->insert([

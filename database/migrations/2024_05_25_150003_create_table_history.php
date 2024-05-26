@@ -6,11 +6,7 @@ use Illuminate\Support\Facades\Schema;
 
 class CreateTableHistory extends Migration
 {
-    /**
-     * Run the migrations.
-     *
-     * @return void
-     */
+    //Se crea la tabla history con los campos country, city, budget, temperature, moneyName, moneySymbol, exchangeRate y convertedBudget
     public function up()
     {
         Schema::create('history', function (Blueprint $table) {
@@ -25,11 +21,8 @@ class CreateTableHistory extends Migration
             $table->string('convertedBudget');
         });
     }
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
+
+    //Se elimina la tabla history en caso de que exista
     public function down()
     {
         Schema::dropIfExists('history');

@@ -6,11 +6,8 @@ use Illuminate\Support\Facades\Schema;
 
 class CreateTableCountries extends Migration
 {
-    /**
-     * Run the migrations.
-     *
-     * @return void
-     */
+    
+    //Se crea la tabla countries con los campos name y apiName
     public function up()
     {
         Schema::create('countries', function (Blueprint $table) {
@@ -20,11 +17,7 @@ class CreateTableCountries extends Migration
         });
     }
 
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
+    //Se elimina la tabla countries en caso de que exista
     public function down()
     {
         Schema::dropIfExists('countries');
